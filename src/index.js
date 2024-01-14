@@ -8,10 +8,12 @@ import Home from './Pages/Home/Home';
 import Team from './Pages/Team/Team';
 
 import Resource from './Pages/Resource/Resource';
+import Event from './Pages/EventPage/Event';
 
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import Aboutpage from './Pages/About/Aboutpage';
 import Course from './Pages/Courses/Course';
+import Hackers from './Pages/Hackers/Hackers';
 import Videos from './Pages/Videos/Videos';
 import Player from './Pages/player/Player';
 
@@ -32,6 +34,14 @@ const appRouter  = createBrowserRouter([
       {
         path:"/team",
         element:<Team/>
+      },
+      {
+        path:"/event",
+        element:<Event/>
+      },
+      {
+        path:"/hackers",
+        element:<Hackers/>
       },
       {
         path:"/contact",
