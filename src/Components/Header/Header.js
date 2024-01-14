@@ -55,6 +55,7 @@ const autoclose =()=>{
         <Link to="/team"  onClick={autoclose} className={`${Open ? styles.nav_mobile_view : ""} ${styles.nav_link}`}>Team</Link>
         <Link to="/resource"  onClick={autoclose} className={`${Open ? styles.nav_mobile_view : ""} ${styles.nav_link}`}>Resources</Link>
        <Link to="/about"  onClick={autoclose} className={`${Open ? styles.nav_mobile_view : ""} ${styles.nav_link}`}>About</Link>
+       <Link to="/event"  onClick={autoclose} className={`${Open ? styles.nav_mobile_view : ""} ${styles.nav_link}`}>Event</Link>
 
         {/* styles.nav_link */}
         
