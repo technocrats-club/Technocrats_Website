@@ -32,7 +32,7 @@ const Resource = () => {
               addon={event.addon}
               name={event.name}
               img={event.img}
-              addon={event.addon}
+              data={event.data}
             />
           </Link>
         ))}
