@@ -1,68 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-.main{
-    background-color: aqua;
-    background: no-repeat url(h.jpg);
-    background-size: contain;
-    height: 1000px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
+
+.box{
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+
+  justify-content: center;
 }
-.main::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.388);
-    /* z-index: ; */
+
+.pic{
+  margin-top: 8rem;
+  height: 80%;
+  display: flex;
+  align-items: center;
+ 
 }
-.banner-item{
-    height: 600px;
-    /* background-color: aquamarine; */
-    width: 50%;
-    /* float: right; */
-    /* text-align: center; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
-    padding: 50px 0px 50px 100px;
+.pic2{
+  margin-top: 5rem;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
-.banner-item h1{
-    z-index: 10;
-    font-size: 4rem;
-    font-weight: 800;
-    padding: 0px 0px;
-    
+
+.pic1 {
+  width: 600px;
+  min-width: 10px;
+  height:   550px;
+  margin-bottom: 10rem;
 }
-.banner-item h5{
-    z-index: 10;
-    font-size: 1.3rem;
-    padding: 25px 0px;
+.heading{
+ 
+  padding-top: 50px;
+  font-size: 5rem; 
+  color: #000000;
+  margin-bottom: 45px;
+
+text-shadow: 
+0.8px 0px 0px rgba(255, 255, 255, 0.15),   /* Right shadow */
+-0.8px 0px 0px rgba(255, 255, 255, 0.15),  /* Left shadow */
+0px 0.8px 0px rgba(255, 255, 255, 0.15),   /* Bottom shadow */
+0px -0.8px 0px rgba(255, 255, 255, 0.15);  /* Top shadow */
+  color: #080108;  
+  font-family: Kumbh Sans;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  font:bold;
+  
+
+}
+.head{
+  color: white;
+  font-size: 4rem;
+}
+.next{
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  padding-left: 4rem;
+
+}
+p{
+  color: white;
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-left: 4rem;
+  gap: 20px;
 }
 .btn{
-    z-index: 10;
-    background-color:#0078d4!important;;
-    border: .5px solid gray;
-    padding: 10px;
-    margin: 20px 0px;
-    border-radius: 5px;
-    color: white;
-    width: 159px;
-    height: 50px;
+  gap: 20px;
+  height: 6rem;
+  width: 9rem;
+  padding-left: 4rem;
+
 }
-.youWin{
-    color: #0078d4;;
+.btn-1{
+  background: linear-gradient(270deg, #9fc3fb 0%, #d2b6fc 100%);
 }
-.round1{
-    background-color: white;
-    color: black;
-    padding: 50px 100px;
-}
-.heading-round1{
-    /* background-color: ; */
-    padding: 20px 0px;
+.btn-1:hover{
+  background:linear-gradient(270deg, #186EF2 0%, #6D18EF 100%);
 }

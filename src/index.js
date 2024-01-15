@@ -16,7 +16,7 @@ import Course from './Pages/Courses/Course';
 import Hackers from './Pages/Hackers/Hackers';
 import Videos from './Pages/Videos/Videos';
 import Player from './Pages/player/Player';
-import Register from './Pages/RegistrationForm.jsx/Register';
+import Register from './Pages/Registration/Register';
 
 const appRouter  = createBrowserRouter([
   {
@@ -48,6 +48,7 @@ const appRouter  = createBrowserRouter([
         path:"/register",
         element:<Register/>
       },
+      
       {
         path:"/contact",
         element:<contact/>
