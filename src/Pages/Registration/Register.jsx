@@ -8,11 +8,11 @@ const Register= () => {
     phoneNumber: '',
     rollNumber: '',
     email: '',
-    libraryId: '',
+    // libraryId: '',
     branch: '',
     year: '',
-    isHosteler: false,
-    isDayScholar: false,
+    // isHosteler: false,
+    // isDayScholar: false,
   });
 
   const handleChange = (e) => {
@@ -89,15 +89,15 @@ const Register= () => {
             type="email"
             id="email"
             name="email"
-            pattern="[a-zA-Z0-9._%+-]+@kiet.edu"
+            pattern="[a-zA-Z0-9._%+-]+@gmail.com"
             value={formData.email}
             onChange={handleChange}
-            placeholder="test@kiet.edu"
+            placeholder="test123@gmail.com"
             required
           />
         </div>
 
-        <div className="form-group">
+        {/* <div className="form-group">
           <label htmlFor="libraryId">Library ID:</label>
           <input
             type="text"
@@ -107,7 +107,7 @@ const Register= () => {
             onChange={handleChange}
             required
           />
-        </div>
+        </div> */}
 
         <div className="form-group">
           <label htmlFor="branch">Branch:</label>
@@ -137,7 +137,7 @@ const Register= () => {
             <option value="4th">4th Year</option>
           </select>
         </div>
-        <div className="form-group radio-group">
+        {/* <div className="form-group radio-group">
           <label>Accommodation:</label>
           <div className="radio-options">
             <label>
@@ -162,7 +162,7 @@ const Register= () => {
               Day Scholar
             </label>
           </div>
-        </div>
+        </div> */}
 
 
         <button type="submit">Submit</button>
