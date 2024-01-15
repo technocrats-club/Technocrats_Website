@@ -11,10 +11,10 @@ const data = [
     addon: "",
     img: hacker,
   },
-  // Add more events as needed
+ 
 ];
 
-const Resource = () => {
+const Event = () => {
   return (
     <div className="domain_wrapper">
       <div className="bgname">Events</div>
@@ -41,4 +41,4 @@ const Resource = () => {
   );
 };
 
-export default Resource;
+export default Event;
