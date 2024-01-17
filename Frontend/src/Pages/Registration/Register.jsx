@@ -1,14 +1,16 @@
-import React, { useState } from "react";
-import "./Register.css"; // Import the CSS file
+import React, { useState } from 'react';
+import './Register.css'; // Import the CSS file
 
-const Register = () => {
+
+const Register= () => {
   const [formData, setFormData] = useState({
-    name: "",
-    phoneNumber: "",
-    email: "",
+    name: '',
+    phoneNumber: '',
+    rollNumber: '',
+    email: '',
     // libraryId: '',
-    branch: "",
-    year: "",
+    branch: '',
+    year: '',
     // isHosteler: false,
     // isDayScholar: false,
   });
@@ -16,8 +18,9 @@ const Register = () => {
   const handleChange = (e) => {
     const { name, value, type } = e.target;
 
-    if (name === "phoneNumber" && type === "text") {
-      const numericValue = value.replace(/\D/g, ""); // Remove non-numeric characters
+    // Ensure numeric values only for Phone Number
+    if (name === 'phoneNumber' && type === 'text') {
+      const numericValue = value.replace(/\D/g, ''); // Remove non-numeric characters
       setFormData((prevData) => ({
         ...prevData,
         [name]: numericValue,
@@ -25,36 +28,14 @@ const Register = () => {
     } else {
       setFormData((prevData) => ({
         ...prevData,
-        [name]: type === "checkbox" ? e.target.checked : value,
+        [name]: type === 'checkbox' ? e.target.checked : value,
       }));
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-
-    fetch("http://localhost:4000/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${res.status}`);
-        }
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        alert("Registration Successful");
-      })
-      .catch((err) => {
-        console.log(err);
-        alert("Registration Failed");
-      });
+    // Handle form submission logic (backend/API call) here
   };
 
   return (
@@ -75,6 +56,7 @@ const Register = () => {
         <div className="form-group">
           <label htmlFor="phoneNumber">Phone Number:</label>
           <div className="phone-input">
+            
             <input
               type="text"
               id="phoneNumber"
@@ -86,6 +68,19 @@ const Register = () => {
               required
             />
           </div>
+        </div>
+
+
+        <div className="form-group">
+          <label htmlFor="rollNumber">University Roll No.:</label>
+          <input
+            type="text"
+            id="rollNumber"
+            name="rollNumber"
+            value={formData.rollNumber}
+            onChange={handleChange}
+            required
+          />
         </div>
 
         <div className="form-group">
@@ -101,6 +96,18 @@ const Register = () => {
             required
           />
         </div>
+
+        {/* <div className="form-group">
+          <label htmlFor="libraryId">Library ID:</label>
+          <input
+            type="text"
+            id="libraryId"
+            name="libraryId"
+            value={formData.libraryId}
+            onChange={handleChange}
+            required
+          />
+        </div> */}
 
         <div className="form-group">
           <label htmlFor="branch">Branch:</label>
@@ -130,10 +137,35 @@ const Register = () => {
             <option value="4th">4th Year</option>
           </select>
         </div>
+        {/* <div className="form-group radio-group">
+          <label>Accommodation:</label>
+          <div className="radio-options">
+            <label>
+              <input
+                type="radio"
+                name="accommodation"
+                value="hosteler"
+                checked={formData.accommodation === 'hosteler'}
+                onChange={handleChange}
+              />
+              Hosteler
+            </label>
 
-        <button type="submit" onClick={handleSubmit}>
-          Submit
-        </button>
+            <label>
+              <input
+                type="radio"
+                name="accommodation"
+                value="dayScholar"
+                checked={formData.accommodation === 'dayScholar'}
+                onChange={handleChange}
+              />
+              Day Scholar
+            </label>
+          </div>
+        </div> */}
+
+
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
