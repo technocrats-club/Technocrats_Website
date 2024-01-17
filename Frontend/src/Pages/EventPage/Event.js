@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './event.css';
-import hacker from '../../Assets/hacker2.jpg';
+import hacker from '../../Assets/hacker2.png';
 import Domaincard from '../../Components/Domaincard/Domaincard';
 import { Link } from 'react-router-dom';
 

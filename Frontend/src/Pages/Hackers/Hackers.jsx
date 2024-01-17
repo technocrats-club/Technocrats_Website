@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import './Hackers.css';
 import Pic from './1.png';
 import Pic2 from './2.png';
+import Pic3 from './31.jpg';
 function Hackers() {
   return (
     <div className="box  ">
       <div className="pic">
-        <img className="pic1 w-[700px] md:w-[800px]" src={Pic} alt="foccu" />
+        <img className="pic1 w-[700px] md:w-[800px]" src={Pic3} alt="foccu" />
       </div>
       <div className="flex flex-col justify-center">
         <img className='pic2' src={Pic2} />

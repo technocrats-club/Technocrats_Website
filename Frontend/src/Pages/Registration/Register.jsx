@@ -6,21 +6,16 @@ const Register= () => {
   const [formData, setFormData] = useState({
     name: '',
     phoneNumber: '',
-    rollNumber: '',
     email: '',
-    // libraryId: '',
     branch: '',
     year: '',
-    // isHosteler: false,
-    // isDayScholar: false,
   });
 
   const handleChange = (e) => {
     const { name, value, type } = e.target;
 
-    // Ensure numeric values only for Phone Number
     if (name === 'phoneNumber' && type === 'text') {
-      const numericValue = value.replace(/\D/g, ''); // Remove non-numeric characters
+      const numericValue = value.replace(/\D/g, ''); 
       setFormData((prevData) => ({
         ...prevData,
         [name]: numericValue,
@@ -35,7 +30,33 @@ const Register= () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic (backend/API call) here
+    fetch('http://localhost:5000/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success) {
+          alert('Registration Successful!');
+          setFormData({
+            name: '',
+            phoneNumber: '',
+            email: '',
+            branch: '',
+            year: '',
+          });
+        } else {
+          alert('Registration Failed!');
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        alert('Registration Failed!');
+      });
+    
   };
 
   return (
@@ -71,17 +92,7 @@ const Register= () => {
         </div>
 
 
-        <div className="form-group">
-          <label htmlFor="rollNumber">University Roll No.:</label>
-          <input
-            type="text"
-            id="rollNumber"
-            name="rollNumber"
-            value={formData.rollNumber}
-            onChange={handleChange}
-            required
-          />
-        </div>
+        
 
         <div className="form-group">
           <label htmlFor="email">Email Id:</label>
