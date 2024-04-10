@@ -26,6 +26,9 @@ text-decoration: none;
     word-spacing: 2px;
     letter-spacing: 2px;
     text-decoration: none;
+    justify-content: center;
+    place-content: center;
+    text-align: center;
 }
 .domain_add_name{
     color: white;

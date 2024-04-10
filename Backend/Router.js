@@ -9,14 +9,27 @@ const HandleUser = mongoose.Schema({
   phoneNumber: Number,
   branch: String,
   year: String,
+  college: String,
 });
 
-const User = mongoose.model("User", HandleUser);
+const user = mongoose.model("User", HandleUser);
 
 router.post("/register", async (req, res) => {
-  const { name, email, phoneNumber, branch, year } = req.body;
-  const Person = new User({ name, email, phoneNumber, branch, year });
-  await Person.save();
+  const { name, email, phoneNumber, branch, year, college } = req.body;
+  try {
+    const Person = new user({
+      name: name,
+      email: email,
+      phoneNumber: phoneNumber,
+      branch: branch,
+      year: year,
+      college: college,
+    });
+    await Person.save();
+    res.status(200).json({ message: "details saved " });
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 router.get("/", (req, res) => {

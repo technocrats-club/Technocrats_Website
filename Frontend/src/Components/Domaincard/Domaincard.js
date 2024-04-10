@@ -4,8 +4,11 @@ const Domaincard = (props) => {
   return (
   <div className={styles.domain_card_wrapper}>
   <img src={props.img} alt="illustartion" className={styles.domain_img} />
-  <div>
-  <div className={styles.domain_name}>{props.name}</div>
+      <div>
+        <div className='text-center '>
+        <div className={styles.domain_name}>{props.name}</div>
+
+        </div>
   <div className={styles.domain_add_name}>{props.addon}</div>
 
   </div>
