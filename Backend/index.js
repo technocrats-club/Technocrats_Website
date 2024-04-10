@@ -20,8 +20,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.post("/register", Router);
+require("../Backend/DB/dbconnect");
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
+app.post("/register", Router);
+app.get("/", Router);
+
+app.listen(4000, () => {
+  console.log(`Server is running on port ${4000}`);
 });

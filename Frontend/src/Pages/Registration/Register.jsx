@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
-import './Register.css'; // Import the CSS file
+import React, { useState } from "react";
+import "./Register.css"; // Import the CSS file
 
-
-const Register= () => {
+const Register = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    phoneNumber: '',
-    email: '',
-    branch: '',
-    year: '',
+    name: "",
+    phoneNumber: "",
+    email: "",
+    branch: "",
+    year: "",
+    college: "",
   });
 
   const handleChange = (e) => {
     const { name, value, type } = e.target;
 
-    if (name === 'phoneNumber' && type === 'text') {
-      const numericValue = value.replace(/\D/g, ''); 
+    if (name === "phoneNumber" && type === "text") {
+      const numericValue = value.replace(/\D/g, "");
       setFormData((prevData) => ({
         ...prevData,
         [name]: numericValue,
@@ -23,44 +23,41 @@ const Register= () => {
     } else {
       setFormData((prevData) => ({
         ...prevData,
-        [name]: type === 'checkbox' ? e.target.checked : value,
+        [name]: type === "checkbox" ? e.target.checked : value,
       }));
     }
   };
 
   const handleSubmit = (e) => {
+    console.log(formData);
     e.preventDefault();
-    fetch('http://localhost:5000/register', {
-      method: 'POST',
+    fetch("http://localhost:4000/register", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
     })
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
-          alert('Registration Successful!');
           setFormData({
-            name: '',
-            phoneNumber: '',
-            email: '',
-            branch: '',
-            year: '',
+            name: "",
+            phoneNumber: "",
+            email: "",
+            branch: "",
+            year: "",
           });
-        } else {
-          alert('Registration Failed!');
         }
       })
       .catch((err) => {
         console.log(err);
-        alert('Registration Failed!');
+        alert("Registration Failed!");
       });
-    
   };
 
   return (
-    <div className="registration-container">
+    <div className="registration-container overflow-hidden ">
       <h1 className="registration-heading">Registration Form</h1>
       <form onSubmit={handleSubmit} className="registration-form">
         <div className="form-group">
@@ -71,13 +68,13 @@ const Register= () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            className="w-88 lg:w-full"
             required
           />
         </div>
         <div className="form-group">
           <label htmlFor="phoneNumber">Phone Number:</label>
           <div className="phone-input">
-            
             <input
               type="text"
               id="phoneNumber"
@@ -87,12 +84,10 @@ const Register= () => {
               pattern="[0-9]{10}"
               maxLength="10"
               required
+              className="w-88 lg:w-full"
             />
           </div>
         </div>
-
-
-        
 
         <div className="form-group">
           <label htmlFor="email">Email Id:</label>
@@ -104,21 +99,10 @@ const Register= () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="test123@gmail.com"
+            className="w-88 lg:w-full"
             required
           />
         </div>
-
-        {/* <div className="form-group">
-          <label htmlFor="libraryId">Library ID:</label>
-          <input
-            type="text"
-            id="libraryId"
-            name="libraryId"
-            value={formData.libraryId}
-            onChange={handleChange}
-            required
-          />
-        </div> */}
 
         <div className="form-group">
           <label htmlFor="branch">Branch:</label>
@@ -129,6 +113,7 @@ const Register= () => {
             value={formData.branch}
             onChange={handleChange}
             required
+            className="w-88 lg:w-full"
           />
         </div>
 
@@ -140,6 +125,7 @@ const Register= () => {
             value={formData.year}
             onChange={handleChange}
             required
+            className="w-88 lg:w-full"
           >
             <option value="">Select Year</option>
             <option value="1st">1st Year</option>
@@ -148,35 +134,23 @@ const Register= () => {
             <option value="4th">4th Year</option>
           </select>
         </div>
-        {/* <div className="form-group radio-group">
-          <label>Accommodation:</label>
-          <div className="radio-options">
-            <label>
-              <input
-                type="radio"
-                name="accommodation"
-                value="hosteler"
-                checked={formData.accommodation === 'hosteler'}
-                onChange={handleChange}
-              />
-              Hosteler
-            </label>
 
-            <label>
-              <input
-                type="radio"
-                name="accommodation"
-                value="dayScholar"
-                checked={formData.accommodation === 'dayScholar'}
-                onChange={handleChange}
-              />
-              Day Scholar
-            </label>
-          </div>
-        </div> */}
+        <div className="form-group">
+          <label htmlFor="branch">College</label>
+          <input
+            type="text"
+            id="college"
+            name="college"
+            value={formData.college}
+            onChange={handleChange}
+            required
+            className="w-88 lg:w-full"
+          />
+        </div>
 
-
-        <button type="submit">Submit</button>
+        <button type="submit" className="bg-blue-500 text-white ">
+          Submit
+        </button>
       </form>
     </div>
   );
