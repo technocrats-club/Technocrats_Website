@@ -85,6 +85,7 @@ p{
 }
 .btn-1{
   background: linear-gradient(270deg, #9fc3fb 0%, #d2b6fc 100%);
+  
 }
 .btn-1:hover{
   background:linear-gradient(270deg, #186EF2 0%, #6D18EF 100%);
