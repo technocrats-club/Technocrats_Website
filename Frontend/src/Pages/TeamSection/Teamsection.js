@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Teamsection.module.css";
+
 const Teamsection = () => {
+  const [value, setvalue] = useState(false);
+
+  function Handleclick(){
+     if(value){
+      
+     }
+  }
   return (
     <div className={styles.team_wrapper} id="team">
       <div className={styles.bgname}> TEAM</div>
@@ -28,7 +36,7 @@ const Teamsection = () => {
           </div>
         </div>
       </div>
-      <button className={styles.teambtn}>View All</button>
+      <button className={styles.teambtn} onClick={()=>Handleclick}>View All</button>
     </div>
   );
 };

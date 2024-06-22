@@ -53,18 +53,18 @@ const autoclose =()=>{
       </div>
         <Link  to="/" onClick={autoclose} className={`${Open ? styles.nav_mobile_view : ""} ${styles.nav_link}`}>Home</Link>
         <Link to="/team"  onClick={autoclose} className={`${Open ? styles.nav_mobile_view : ""} ${styles.nav_link}`}>Team</Link>
+       <Link to="/event"  onClick={autoclose} className={`${Open ? styles.nav_mobile_view : ""} ${styles.nav_link}`}>Event</Link>
         <Link to="/resource"  onClick={autoclose} className={`${Open ? styles.nav_mobile_view : ""} ${styles.nav_link}`}>Resources</Link>
        <Link to="/about"  onClick={autoclose} className={`${Open ? styles.nav_mobile_view : ""} ${styles.nav_link}`}>About</Link>
-       <Link to="/event"  onClick={autoclose} className={`${Open ? styles.nav_mobile_view : ""} ${styles.nav_link}`}>Event</Link>
 
         {/* styles.nav_link */}
         
         {Open ?
-          <a href="https://discord.gg/aDEMAmEP"> <button className={`${Open ? styles.join_mobile : styles.close_menu}`}>Join Us</button></a>
+          <a href="https://discord.gg/cqc9CHJh"> <button className={`${Open ? styles.join_mobile : styles.close_menu}`}>Join Us</button></a>
           : ""}
       </div>
 
-      <a href="https://discord.gg/aDEMAmEP"> <button className={styles.joinbtn}>Join Us</button></a>
+      <a href="https://chat.whatsapp.com/Gi9OoTWITrnCPd6URsgQFj"> <button className={styles.joinbtn}>Join Us</button></a>
 
       <div className={`${styles.ham_menu} ${Visible ? "" : styles.close_menu}`} onClick={upMenu}>
         <FcMenu size={30} />
