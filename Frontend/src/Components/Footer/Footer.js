@@ -3,7 +3,6 @@ import styles from "./Footer.module.css";
 import {
   TiLocation,
   TiMail,
-  TiPhone,
   TiSocialInstagram,
   TiSocialLinkedin,
   TiSocialTwitter,
@@ -12,32 +11,44 @@ const Footer = () => {
   return (
     <div className={styles.footer_container}>
       <div className={styles.foter_blocks_1}>
-        <div>HOME</div>
-        <div>ABOUT US</div>
-        <div>DOMAINS</div>
-        <div>TESTIMONIALS</div>
+        <a href="/">
+          <div>HOME</div>{" "}
+        </a>
+        <a href="/about">
+          <div>ABOUT US</div>
+        </a>
+        <a href="#domains_here">
+          <div>DOMAINS</div>
+        </a>
       </div>
       <div className={styles.foter_blocks_2}>
-        <div>GALLERY</div>
+        <a href="#gallery_here">
+          <div>GALLERY</div>
+        </a>
         <div>ACHIEVEMENTS</div>
-        <div>BLOGS</div>
-        <div>MEET OUR TEAM</div>
+
+        <a href="/team">
+          <div>MEET OUR TEAM</div>
+        </a>
       </div>
       <div className={styles.foter_blocks_3}>
-        <div className={styles.iconcont}>
-          <TiLocation className={styles.icon} /> KIET GROUP OF
-          INSTITIUTIONS
-        </div>
+        <a href="https://maps.app.goo.gl/NTZJvrnw9kVrYDpk7" target="_blank">
+          <div className={styles.iconcont}>
+            <TiLocation className={styles.icon} /> KIET GROUP OF INSTITIUTIONS
+          </div>
+        </a>
 
         {/* <div className={styles.iconcont}>
           {" "}
           <TiPhone className={styles.icon} />
           +91-7302855302
         </div> */}
-        <div className={styles.iconcont}>
-          <TiMail className={styles.icon} />
-          technocrats@kiet.edu
-        </div>
+        <a href="mailto:technocrats@kiet.edu">
+          <div className={styles.iconcont}>
+            <TiMail className={styles.icon} />
+            technocrats@kiet.edu
+          </div>
+        </a>
         <div>
           <div className={styles.social_handles}>
             <a href="https://www.linkedin.com/company/technocrats-kiet/">

@@ -1,77 +1,148 @@
 import React from "react";
 import styles from "./Team.module.css";
 import Teamcard from "../../Components/TeamCard/Teamcard";
-import teamsample from '../../Assets/team/team.JPG'
-import aryan from '../../Assets/team/aryan.png'
-import Prashant from '../../Assets/team/prashant.png'
-import kushagra from '../../Assets/team/kushagra.png'
-import raj from '../../Assets/team/raj.png'
-import garvit from '../../Assets/team/garvit.png'
-import veer from '../../Assets/team/narwar.png'
-import raunak from '../../Assets/team/raunak.png'
-import utlarsh from '../../Assets/team/utkarsh.png'
-import sanskriti from '../../Assets/team/vats.png'
-import Jhalak from '../../Assets/team/jhalak.png'
-import tushar from '../../Assets/team/tushar.png'
+import teamsample from "../../Assets/team/team.JPG";
+import aryan from "../../Assets/team/aryan.png";
+import Prashant from "../../Assets/team/prashant.png";
+import raj from "../../Assets/team/raj.png";
+import garvit from "../../Assets/team/garvit.png";
+import veer from "../../Assets/team/narwar.png";
+import raunak from "../../Assets/team/raunak.png";
+import utlarsh from "../../Assets/team/utkarsh.png";
+import sanskriti from "../../Assets/team/vats.png";
+import tushar from "../../Assets/team/tushar.png";
+import AdityaMohan from "../../Assets/team/currenteam/aditya.png";
+import AshutoshMishra from "../../Assets/team/currenteam/ashutosh.png";
+import Ananya from "../../Assets/team/currenteam/ananya.png";
+import Pranshu from "../../Assets/team/currenteam/pranshu.png";
+import shreya from "../../Assets/team/currenteam/shruti.png";
+import Siddarth from "../../Assets/team/currenteam/sid.png";
+import Nishika from "../../Assets/team/currenteam/nishika.png";
+import Shreya from "../../Assets/team/currenteam/shreya.png";
+import Rithik from "../../Assets/team/currenteam/hrithik_android.png";
+import Sahil from "../../Assets/team/currenteam/sahil.png";
+import Anoushka from "../../Assets/team/currenteam/anushka.png"
+import Sarvin from "../../Assets/team/currenteam/sarvin.png"
 
-const data = [
-  {
-    name: "Prashant Rai",
-    role: "Co-Founder",
-    img: Prashant
-  },
-  {
-    name: "Kushagra Srivastava",
-    role: "Co-Founder",
-    img: kushagra
-  },
-  
+
+const founderteam = [
   {
     name: "Harveer Narwar",
     role: "President",
-    img: veer
+    img: veer,
+  },
+  {
+    name: "Prashant Rai",
+    role: "Co-Founder",
+    img: Prashant,
   },
   {
     name: "Raj Pandey",
     role: "Community Manager",
-    img: raj
+    img: raj,
   },
 
   {
     name: "Sanskriti Vats",
     role: "General Secretary",
-    img:sanskriti 
+    img: sanskriti,
   },
-  
+];
+
+const currentteam = [
+  {
+    name: "Ananya Srivastava",
+    role: "President",
+    img: Ananya,
+  },
+  {
+    name: "Pranshu Gupta",
+    role: "Vice President",
+    img: Pranshu,
+  },
+  {
+    name: "Shreya Bhradwaj ",
+    role: "Vice President",
+    img: shreya,
+  },
+  {
+    name: "Siddarth Yadav",
+    role: "Community manager",
+    img: Siddarth,
+  },
+  {
+    name: "Nishika tyagi  ",
+    role: "Social Media Lead",
+    img: Nishika,
+  },
+  {
+    name: "Shreevesh Kumar ",
+    role: "Web Lead",
+    img: AshutoshMishra,
+  },
+
+  {
+    name: "Ritik Bhatt",
+    role: "Android Lead",
+    img: Rithik,
+  },
+  {
+    name: "Shreya punani",
+    role: "Cyber Lead",
+    img: Shreya,
+  },
+  {
+    name: "Ashutosh Mishra ",
+    role: "ML Lead",
+    img: AshutoshMishra,
+  },
+  {
+    name: "Sarvin srivastava",
+    role: "CP/DSA Lead",
+    img: Sarvin,
+  },
+  {
+    name: "Sahil Panwar",
+    role: "UI/UX Lead",
+    img: Sahil,
+  },
+  {
+    name: "Anoushka  ",
+    role: "Content Lead",
+    img: Anoushka,
+  },
+  {
+    name: "Aditya Mohan ",
+    role: "CP/DSA Lead",
+    img: AdityaMohan,
+  },
+];
+
+const pastcoreteam = [
   {
     name: "Aryan Tiwari",
     role: "Web Lead",
-    img: aryan
+    img: aryan,
   },
   {
     name: "Garvit Agarwal",
     role: "ML Lead",
-    img:garvit
+    img: garvit,
   },
   {
     name: "Raunak Seth",
     role: "Android Lead",
-    img: raunak
+    img: raunak,
   },
   {
     name: "Utkarsh Shukla",
     role: "AR/VR Lead",
-    img:utlarsh
-  },
-  {
-    name: "Jhalak Saxena",
-    role: "Content Lead",
-    img:Jhalak
+    img: utlarsh,
   },
   {
     name: "Tushar Singh",
     role: "UI/UX Lead",
-    img:tushar
+    img: tushar,
   },
 ];
 
@@ -82,9 +153,32 @@ const Team = () => {
       <div className={styles.test_text}>
         The People who Drive <div>our Mission </div>{" "}
       </div>
-      <div className={styles.mainimgdiv}><img className={styles.team_img} src={teamsample} alt="illust"/></div>
+      <div className={styles.mainimgdiv}>
+        <img className={styles.team_img} src={teamsample} alt="illust" />
+      </div>
+
+      <div className={styles.test_text}>Founders </div>
+
       <div className={styles.team_container}>
-{data.map((e)=><Teamcard key={e.name} name={e.name} img={e.img} role={e.role}/>)}
+        {founderteam.map((e) => (
+          <Teamcard key={e.name} name={e.name} img={e.img} role={e.role} />
+        ))}
+      </div>
+      <div className={styles.test_text}>Current Core Team </div>
+
+
+      <div className={styles.team_container}>
+        {currentteam.map((e) => (
+          <Teamcard key={e.name} name={e.name} img={e.img} role={e.role} />
+        ))}
+      </div>
+
+      <div className={styles.test_text}>First Core Team </div>
+
+      <div className={styles.team_container}>
+        {pastcoreteam.map((e) => (
+          <Teamcard key={e.name} name={e.name} img={e.img} role={e.role} />
+        ))}
       </div>
     </div>
   );

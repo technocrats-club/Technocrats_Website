@@ -57,7 +57,7 @@ const Register = () => {
   };
 
   return (
-    <div className="registration-container overflow-hidden ">
+    <div className="registration-container overflow-hidden">
       <h1 className="registration-heading">Registration Form</h1>
       <form onSubmit={handleSubmit} className="registration-form">
         <div className="form-group">

@@ -28,7 +28,7 @@ const imgdata = [
 ]
 const Gallery = () => {
   return (
-    <div className={styles.testimonial_wrapper}>
+    <div className={styles.testimonial_wrapper} id="gallery_here">
     <div className={styles.bgname}> GALLERY</div>
     <div className={styles.test_text}>
     A Glimpse of Our  <div>Vision</div> </div>
