@@ -4,6 +4,8 @@ import Card from "../../Assets/Card.jpg"
 
 // styles.domain_name
 
+//change the card style and every card should have different route and image
+
 const Domaincard = (props) => {
   return (
   <div >
