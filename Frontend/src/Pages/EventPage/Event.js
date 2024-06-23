@@ -7,66 +7,64 @@ import technoverse from "../../Assets/technoverse.jpg";
 const data = [
   {
     name: "Technocrats- Club Launch",
-    addon: "",
+    addon: "date here ",
     img: technoverse,
   },
   {
     name: "WEB 3 SANGAM",
-    addon: "",
+    addon: "date here ",
     img: technoverse,
   },
   {
-    name: "CLUB Spotlight- Tech Education",
-    addon: "",
+    name: "CLUB Spotlight",
+    addon: "date here ",
     img: technoverse,
   },
   {
-    name: "DevSprint 1.0 (React Bootcamp)",
-    addon: "",
+    name: "DevSprint 1.0",
+    addon: "date here ",
     img: technoverse,
   },
   {
-    name: "Technocrats - Website Launch",
-    addon: "",
+    name: "Website Launch",
+    addon: "date here ",
     img: technoverse,
   },
   {
     name: "GDSC-ABESEC",
-    addon: "",
+    addon: "date here ",
     img: technoverse,
   },
   {
-    name: "Speaker Session-Nitish Singh (Online)",
-    addon: "",
+    name: "Nitish Singh (Session)",
+    addon: "date here ",
     img: technoverse,
   },
   {
-    name: "DevBlend (AR/VR Bootcamp) ",
-    addon: "",
+    name: "DevBlend",
+    addon: "date here ",
     img: technoverse,
   },
   {
     name: "THE HACKER'S MEETUP",
-    addon: "",
+    addon: "date here ",
     img: technoverse,
   },
   {
-    name: "TECHNOVERSE (Speaker session)",
-    addon: "",
+    name: "TECHNOVERSE",
+    addon: "date here ",
     img: technoverse,
   },
   {
-    name: "Design Bridge (UI/UX Bootcamp)",
-    addon: "",
+    name: "Design Bridge",
+    addon: "date here ",
     img: technoverse,
   },
   {
     name: "LATEX Workshop",
-    addon: "",
+    addon: "date here ",
     img: technoverse,
   },
-
-
 ];
 
 const Event = () => {

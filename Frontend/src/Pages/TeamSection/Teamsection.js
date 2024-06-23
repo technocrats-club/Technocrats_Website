@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Teamsection.module.css";
 
 const Teamsection = () => {
   const [value, setvalue] = useState(false);
+  const [variable, setvariable] = useState(" ");
 
-  function Handleclick(){
-     if(value){
-      
-     }
-  }
+  useEffect(() => {
+    if (value) {
+      setvariable("block");
+    } else {
+      setvariable("none");
+    }
+  }, [value]);
+
   return (
     <div className={styles.team_wrapper} id="team">
       <div className={styles.bgname}> TEAM</div>
@@ -34,9 +38,18 @@ const Teamsection = () => {
             envisions a furturistic community with a motivational complexity,
             empowering members past the constraints of the orthodox.
           </div>
+          <div className={styles.team_content_2} style={{ display: variable }}>
+            Vision: Premeiring as a dedicated precision towards the cultuvation
+            of technological innovation in creative enthusiasm of interactive
+            leadership among the scholars of the Institute, 'Technocrats'
+            envisions a furturistic community with a motivational complexity,
+            empowering members past the constraints of the orthodox.
+          </div>
         </div>
       </div>
-      <button className={styles.teambtn} onClick={()=>Handleclick}>View All</button>
+      <button className={styles.teambtn} onClick={() => setvalue(true)}>
+        View All
+      </button>
     </div>
   );
 };

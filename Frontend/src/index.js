@@ -14,6 +14,7 @@ import Hackers from "./Pages/Hackers/Hackers";
 import Videos from "./Pages/Videos/Videos";
 import Player from "./Pages/player/Player";
 import Register from "./Pages/Registration/Register";
+import Achievement from "./Pages/Achievment/Achievment"
 
 const appRouter = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/event",
         element: <Event />,
+      },
+      {
+        path: "/achievement ",
+        element: <Achievement />,
       },
       {
         path: "/hackers",

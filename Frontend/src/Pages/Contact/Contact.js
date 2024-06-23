@@ -4,8 +4,6 @@ import contactill from "../../Assets/contactill.png";
 import styles from "./Contact.module.css";
 import toast from "react-hot-toast";
 
-
-
 const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -21,8 +19,7 @@ const Contact = () => {
       .then(
         (result) => {
           toast.success("Message Sent");
-          console.log(result.text);
-          console.log("message sent ");
+          form.current.reset();
         },
         (error) => {
           toast.error("Message is not sent some error");
