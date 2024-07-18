@@ -5,6 +5,8 @@ import ayush from '../../Assets/team/ayush.jpg'
 import Saumya from '../../Assets/team/saumya.jpeg.jpg'
 import anshul from '../../Assets/team/Aanshul.jpeg.jpg'
 import anuj from '../../Assets/team/anuj.jpeg'
+import nitish from "../../Assets/nitishagarwal.jpg"
+import shreyansh from "../../Assets/shreyanshshukla.jpg"
 
 const data = [{
     name:"Ayush Singh",
@@ -44,7 +46,7 @@ const data = [{
 {
   name:"Nitish Agrawal",
   role:"Security @ V-Mart",
-  img:"https://media.licdn.com/dms/image/D4D35AQG_a82f5NoWYA/profile-framedphoto-shrink_400_400/0/1691556161765?e=1698087600&v=beta&t=0BBT0YwBqfGHmDD5UXjVf6p_Nr9HMG3b61EQPt9AQGM",
+  img:nitish,
   desc:"23| Security @ V-Mart | Cyber Security Enthusiastic| 10+ Talks | Master's Diploma in Cyber Security| Cyber Volunteer (UP POLICE) | Speaker | Teacher | Hacker ",
   twitter:"",
   linkedin:"",
@@ -52,10 +54,10 @@ instagram:""}
 ,{
   name:"Shreyansh Shukla",
   role:"Amazon",
-  img:"https://media.licdn.com/dms/image/D5603AQFlRB2uwNJbFg/profile-displayphoto-shrink_400_400/0/1689147267253?e=1703116800&v=beta&t=HQYc2-8_6C7qY2fKNkfEop96uJ5ZDe6WkxO0H6GeS28",
+  img:shreyansh,
   desc:"SDE @Amazon | Competitive Programmer",
   twitter:"",
-  linkedin:"",
+  linkedin:"https://www.linkedin.com/in/shreyansh-shukla-38842b187/",
 instagram:""}
 ]
 const Testimonial = () => {

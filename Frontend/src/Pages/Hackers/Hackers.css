@@ -85,7 +85,37 @@ p{
 }
 .btn-1{
   background: linear-gradient(270deg, #9fc3fb 0%, #d2b6fc 100%);
+  
 }
 .btn-1:hover{
   background:linear-gradient(270deg, #186EF2 0%, #6D18EF 100%);
+}
+
+.test_textevent {
+  color: white;
+  margin: 20px;
+}
+.test_textevent {
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+  color: white;
+  font-size: 2vw;
+  font-weight: 900;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 505px) {
+  .domain_wrapper {
+    margin-top: 100px;
+  }
+  .domain_container {
+    margin: 30px;
+  }
+  .test_textevent {
+    color: white;
+    text-align: center;
+    font-size: 1em;
+  }
 }

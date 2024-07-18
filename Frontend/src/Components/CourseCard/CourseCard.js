@@ -4,7 +4,7 @@ import styles from "./CourseCard.module.css";
 const CourseCard = (props) => {
   return (
     <div className={styles.course_card_container}>
-      <img className={styles.img} src={props.img} />
+      <img className={styles.img} src={props.img} alt="image_of" />
       <div className={styles.details}>
        {props.data}
       </div>

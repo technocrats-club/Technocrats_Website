@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Teamsection.module.css";
+
 const Teamsection = () => {
+  const [value, setvalue] = useState(false);
+  const [variable, setvariable] = useState(" ");
+
+  useEffect(() => {
+    if (value) {
+      setvariable("block");
+    } else {
+      setvariable("none");
+    }
+  }, [value]);
+
   return (
     <div className={styles.team_wrapper} id="team">
       <div className={styles.bgname}> TEAM</div>
@@ -26,9 +38,26 @@ const Teamsection = () => {
             envisions a furturistic community with a motivational complexity,
             empowering members past the constraints of the orthodox.
           </div>
+          <div className={styles.team_content_2} style={{ display: variable }}>
+            The Technocrats Club, founded on July 18, 2023, unites students
+            passionate about web development, augmented reality, Android
+            development, machine learning, and competitive programming. Our
+            mission is to build a vibrant community of learners and innovators
+            who excel through active participation in classes, events, and
+            hackathons.
+            <br />
+            In just one year, the Technocrats Club has become a thriving hub for
+            tech enthusiasts. We've enhanced members' skills through diverse
+            classes and workshops, earned accolades in various events and
+            hackathons, and fostered innovation through collaborative projects
+            and consistent mentorship. Our journey so far highlights our
+            commitment to excellence and achievement.
+          </div>
         </div>
       </div>
-      <button className={styles.teambtn}>View All</button>
+      <button className={styles.teambtn} onClick={() => setvalue(true)}>
+        View All
+      </button>
     </div>
   );
 };

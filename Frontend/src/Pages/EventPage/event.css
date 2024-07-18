@@ -11,6 +11,7 @@
    background-size: 10% , 25% ;
    
    
+   
    }
 .resource_heading{
     font-size: 4em;
@@ -22,12 +23,13 @@
 }
 .domain_container{
     margin: 60px;
-    padding: 30px;
+    padding: 80px;
    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 50px;
+
   }
   
 .bgname{
