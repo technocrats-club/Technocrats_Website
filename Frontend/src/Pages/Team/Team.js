@@ -23,6 +23,7 @@ import Rithik from "../../Assets/team/currenteam/hrithik_android.png";
 import Sahil from "../../Assets/team/currenteam/sahil.png";
 import Anoushka from "../../Assets/team/currenteam/anushka.png"
 import Sarvin from "../../Assets/team/currenteam/sarvin.png"
+import Shreevesh from "../../Assets/shreevesh.png"
 
 
 const founderteam = [
@@ -78,7 +79,7 @@ const currentteam = [
   {
     name: "Shreevesh Kumar ",
     role: "Web Lead",
-    img: AshutoshMishra,
+    img: Shreevesh,
   },
 
   {
@@ -98,7 +99,7 @@ const currentteam = [
   },
   {
     name: "Sarvin srivastava",
-    role: "CP/DSA Lead",
+    role: "AR/VR Lead",
     img: Sarvin,
   },
   {

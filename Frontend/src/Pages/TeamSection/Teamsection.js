@@ -39,11 +39,19 @@ const Teamsection = () => {
             empowering members past the constraints of the orthodox.
           </div>
           <div className={styles.team_content_2} style={{ display: variable }}>
-            Vision: Premeiring as a dedicated precision towards the cultuvation
-            of technological innovation in creative enthusiasm of interactive
-            leadership among the scholars of the Institute, 'Technocrats'
-            envisions a furturistic community with a motivational complexity,
-            empowering members past the constraints of the orthodox.
+            The Technocrats Club, founded on July 18, 2023, unites students
+            passionate about web development, augmented reality, Android
+            development, machine learning, and competitive programming. Our
+            mission is to build a vibrant community of learners and innovators
+            who excel through active participation in classes, events, and
+            hackathons.
+            <br />
+            In just one year, the Technocrats Club has become a thriving hub for
+            tech enthusiasts. We've enhanced members' skills through diverse
+            classes and workshops, earned accolades in various events and
+            hackathons, and fostered innovation through collaborative projects
+            and consistent mentorship. Our journey so far highlights our
+            commitment to excellence and achievement.
           </div>
         </div>
       </div>

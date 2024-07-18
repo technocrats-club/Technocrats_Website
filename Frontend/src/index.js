@@ -38,7 +38,7 @@ const appRouter = createBrowserRouter([
         element: <Event />,
       },
       {
-        path: "/achievement ",
+        path: "/achievement",
         element: <Achievement />,
       },
       {

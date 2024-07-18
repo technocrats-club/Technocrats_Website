@@ -136,10 +136,28 @@ const data = {
   ],
   CyberSecurity: [
     {
-      name: "Unreal Engine Beginner Tutorial – ",
+      name: "Cyber Security Basics",
+      img: "https://i.ytimg.com/vi/k-zMkzmduqI/maxresdefault.jpg",
+      id: "n5CxWkohlCs&list=RDn5CxWkohlCs",
+      data: "Introduction to Cyber Security: This course covers fundamental concepts of cybersecurity, including network security, cryptography, and cyber threats.",
+    },
+    {
+      name: "Cyber Security Basics",
       img: "https://i.ytimg.com/vi/k-zMkzmduqI/maxresdefault.jpg",
       id: "PLncmXJdh4q88DFCEVuGpOY3AGQwBvoQnh",
-      data: "Unreal Engine Beginner Tutorials provide foundational knowledge for newcomers, introducing them to the Unreal Engine for creating games, simulations, and interactive experiences with a focus on basics and initial steps.",
+      data: "Introduction to Cyber Security: This course covers fundamental concepts of cybersecurity, including network security, cryptography, and cyber threats.",
+    },
+    {
+      name: "Cyber Security Basics",
+      img: "https://i.ytimg.com/vi/k-zMkzmduqI/maxresdefault.jpg",
+      id: "PLncmXJdh4q88DFCEVuGpOY3AGQwBvoQnh",
+      data: "Introduction to Cyber Security: This course covers fundamental concepts of cybersecurity, including network security, cryptography, and cyber threats.",
+    },
+    {
+      name: "Cyber Security Basics",
+      img: "https://i.ytimg.com/vi/k-zMkzmduqI/maxresdefault.jpg",
+      id: "PLncmXJdh4q88DFCEVuGpOY3AGQwBvoQnh",
+      data: "Introduction to Cyber Security: This course covers fundamental concepts of cybersecurity, including network security, cryptography, and cyber threats.",
     },
   ],
 };
@@ -158,8 +176,10 @@ const Course = () => {
       break;
     case "AR/VR":
       coursedata = data.AR;
-    case "Cyber Security":
+      break;
+    case "CyberSecurity":
       coursedata = data.CyberSecurity;
+      break;
     default:
     // code block
   }

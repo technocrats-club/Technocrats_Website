@@ -34,7 +34,7 @@ const data = [
     img: meta,
   },
   {
-    name: "Cyber Security",
+    name: "CyberSecurity",
     addon: "",
     data: "this is a web development ... ",
     img: cyber,

@@ -1,26 +1,17 @@
-import React from 'react'
-import styles from './Domaincard.module.css'
-import Card from "../../Assets/Card.jpg"
-
-// styles.domain_name
-
-//change the card style and every card should have different route and image
-
+import React from "react";
+import styles from "./Domaincard.module.css";
 const Domaincard = (props) => {
   return (
-  <div >
-  <img src={Card} alt="illustartion" className='w-69' />
+    <div className={styles.domain_card_wrapper}>
+      <img src={props.img} alt="illustartion" className={styles.domain_img} />
       <div>
-        <div className='text-center '>
-        <div className="text-white ">{props.name}</div>
-
+        <div className="text-center ">
+          <div className={styles.domain_name}>{props.name}</div>
         </div>
-  <div className={styles.domain_add_name}>{props.addon}</div>
+        <div className={styles.domain_add_name}>{props.addon}</div>
+      </div>
+    </div>
+  );
+};
 
-  </div>
- 
-  </div>
-  )
-}
-
-export default Domaincard
+export default Domaincard;
