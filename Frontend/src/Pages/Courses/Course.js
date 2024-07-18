@@ -135,30 +135,7 @@ const data = {
     },
   ],
   CyberSecurity: [
-    {
-      name: "Cyber Security Basics",
-      img: "https://i.ytimg.com/vi/k-zMkzmduqI/maxresdefault.jpg",
-      id: "n5CxWkohlCs&list=RDn5CxWkohlCs",
-      data: "Introduction to Cyber Security: This course covers fundamental concepts of cybersecurity, including network security, cryptography, and cyber threats.",
-    },
-    {
-      name: "Cyber Security Basics",
-      img: "https://i.ytimg.com/vi/k-zMkzmduqI/maxresdefault.jpg",
-      id: "PLncmXJdh4q88DFCEVuGpOY3AGQwBvoQnh",
-      data: "Introduction to Cyber Security: This course covers fundamental concepts of cybersecurity, including network security, cryptography, and cyber threats.",
-    },
-    {
-      name: "Cyber Security Basics",
-      img: "https://i.ytimg.com/vi/k-zMkzmduqI/maxresdefault.jpg",
-      id: "PLncmXJdh4q88DFCEVuGpOY3AGQwBvoQnh",
-      data: "Introduction to Cyber Security: This course covers fundamental concepts of cybersecurity, including network security, cryptography, and cyber threats.",
-    },
-    {
-      name: "Cyber Security Basics",
-      img: "https://i.ytimg.com/vi/k-zMkzmduqI/maxresdefault.jpg",
-      id: "PLncmXJdh4q88DFCEVuGpOY3AGQwBvoQnh",
-      data: "Introduction to Cyber Security: This course covers fundamental concepts of cybersecurity, including network security, cryptography, and cyber threats.",
-    },
+    
   ],
 };
 const Course = () => {

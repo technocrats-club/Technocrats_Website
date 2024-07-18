@@ -13,6 +13,8 @@ import sarvinnec from "../../Assets/sarviniec.jpg";
 import sidinnovation from "../../Assets/sidinnovationday.jpg";
 import BVCOE from "../../Assets/BVCOEhack.jpg";
 import kim from "../../Assets/kimquiz.jpg";
+import abhinavintern from "../../Assets/abhinavintern.png"
+import dhruvintern from "../../Assets/dhruvintern.png"
 
 const Icon1 = () => {
   return (
@@ -144,6 +146,22 @@ const data = [
     description:
       "I am thrilled to announce that I have joined NEC Corporation India Pvt Ltd. as an intern. This is a fantastic opportunity for me to learn and grow in such a prestigious organization, and I am incredibly grateful for this chance.",
     link: "https://www.linkedin.com/posts/sarvin-shrivastava-493b20176_internship-neccorporationindia-careerjourney-activity-7211050452602273792-KLQU?utm_source=share&utm_medium=member_desktop",
+  },
+  {
+    id: 7,
+    title: "App Dev Intern @Business Incubator TBI-KIET",
+    image: abhinavintern,
+    description:
+      "Abhinav Singh is an Application Development Intern at TBI-KIET, focusing on leveraging Flutter to create user-friendly multi-platform applications tailored to startup needs. His role involves developing scalable solutions and addressing diverse software modules to support startup growth and innovation.",
+    link: "https://www.linkedin.com/posts/sarvin-shrivastava-493b20176_internship-neccorporationindia-careerjourney-activity-7211050452602273792-KLQU?utm_source=share&utm_medium=member_desktop",
+  },
+  {
+    id: 8,
+    title: "Flutter Intern at @Ostello India Pvt Ltd",
+    image: dhruvintern,
+    description:
+      "Dhruv Sharma completed a Flutter Internship at Ostello India Pvt Ltd, starting on May 25, 2024. He contributed to real-time feature development, optimized Dart code, managed end-to-end design, integrated RESTful APIs, facilitated agile development, and ensured secure payment gateway setups, addressing UI and backend challenges with seamless API integration.",
+    link: "https://www.linkedin.com/in/dhruv-sharma-a3a94a256/",
   },
 ];
 const Achievment = () => {

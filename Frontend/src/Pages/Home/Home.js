@@ -43,7 +43,7 @@ const Home = () => {
     <div className={styles.disc_text_1}>Wanna join us?</div>
     <div className={styles.disc_text_2}>JOIN OUR</div>
     <div className={styles.disc_text_2}>DISCORD, NOW!</div>
-  <a href='https://discord.gg/cqc9CHJh'><button className={styles.join_btn}>Join Now</button></a>  
+  <a href='https://discord.com/invite/W8cVgj8xh'><button className={styles.join_btn}>Join Now</button></a>  
   </div>
 <img src={discmap} className={styles.discmapimg} alt="illustartion"/>
 </div>
