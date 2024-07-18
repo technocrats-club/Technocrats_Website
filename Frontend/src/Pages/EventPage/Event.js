@@ -1,67 +1,37 @@
 import React from "react";
 import "./event.css";
-import Domaincard from "../../Components/Domaincard/Domaincard";
+import DomainCard from "../../Components/Domaincard/Domaincard";
 import { Link } from "react-router-dom";
 import technoverse from "../../Assets/technoverse.jpg";
+import sangam from "../../Assets/sangamposter.jpg"
 
 const data = [
   {
-    name: "Technocrats- Club Launch",
+    name:"Inauguration",
+    img:technoverse,
+  },
+  {
+    name: "Technocrats-Website",
     addon: "date here ",
     img: technoverse,
   },
   {
     name: "WEB 3 SANGAM",
     addon: "date here ",
-    img: technoverse,
+    img: sangam,
   },
   {
-    name: "CLUB Spotlight",
+    name: "Technoverse",
     addon: "date here ",
     img: technoverse,
   },
   {
-    name: "DevSprint 1.0",
-    addon: "date here ",
-    img: technoverse,
-  },
-  {
-    name: "Website Launch",
-    addon: "date here ",
-    img: technoverse,
-  },
-  {
-    name: "GDSC-ABESEC",
-    addon: "date here ",
-    img: technoverse,
-  },
-  {
-    name: "Nitish Singh (Session)",
-    addon: "date here ",
-    img: technoverse,
-  },
-  {
-    name: "DevBlend",
+    name: "Carrer-Guide",
     addon: "date here ",
     img: technoverse,
   },
   {
     name: "THE HACKER'S MEETUP",
-    addon: "date here ",
-    img: technoverse,
-  },
-  {
-    name: "TECHNOVERSE",
-    addon: "date here ",
-    img: technoverse,
-  },
-  {
-    name: "Design Bridge",
-    addon: "date here ",
-    img: technoverse,
-  },
-  {
-    name: "LATEX Workshop",
     addon: "date here ",
     img: technoverse,
   },
@@ -79,14 +49,9 @@ const Event = () => {
           <Link
             key={event.name}
             style={{ textDecoration: "none" }}
-            to={`/hackers?name=${encodeURIComponent(event.name)}`}
+            to={`/hackers/${encodeURIComponent(event.name)}`}
           >
-            <Domaincard
-              addon={event.addon}
-              name={event.name}
-              img={event.img}
-              data={event.data}
-            />
+            <DomainCard addon={event.addon} name={event.name} img={event.img} />
           </Link>
         ))}
       </div>

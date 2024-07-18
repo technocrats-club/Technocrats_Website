@@ -1,5 +1,4 @@
 import React from "react";
-import shreevesh from "../../Assets/shreevesh.png";
 import innotech from "../../Assets/innotech.jpg";
 import sih from "../../Assets/SIH.jpg";
 import nasaspaceapp from "../../Assets/nasaspaceapp.jpg";
@@ -127,7 +126,7 @@ const data = [
     title: "KIM online contest winner ",
     image: kim,
     description: "description",
-    link: "",
+    link: "https://unstop.com/competitions/kirit-40-kirloskar-institute-of-management-kim-852976/online-quiz/285636",
   },
   {
     id: 6,
@@ -168,7 +167,7 @@ const Achievment = () => {
 
 const AchievmentCard = ({ title, image, description, link }) => {
   return (
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" rel="noreferrer">
       <div class="max-w-md rounded overflow-hidden shadow-lg bg-slate-800 p-5 m-5">
         <div class="flex flex-row justify-between">
           <div class="font-bold text-xl mb-2 text-blue-400">{title}</div>
@@ -177,7 +176,7 @@ const AchievmentCard = ({ title, image, description, link }) => {
         <div className="flex align-middle place-content-center justify-center">
           <img class="w-full" src={image} alt="Sunset in the mountains" />
         </div>
-        <p class="text-gray-400 text-base">{description}</p>
+        <div class="text-gray-400 text-center ">{description}</div>
       </div>
     </a>
   );

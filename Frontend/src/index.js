@@ -42,7 +42,7 @@ const appRouter = createBrowserRouter([
         element: <Achievement />,
       },
       {
-        path: "/hackers",
+        path: "/hackers/:name",
         element: <Hackers />,
       },
       {

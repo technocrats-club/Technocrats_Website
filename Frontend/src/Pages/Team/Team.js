@@ -63,7 +63,7 @@ const currentteam = [
   },
   {
     name: "Shreya Bhradwaj ",
-    role: "Vice President",
+    role: "General Secretary",
     img: shreya,
   },
   {

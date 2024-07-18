@@ -4,10 +4,12 @@ import Domaincard from "../../Components/Domaincard/Domaincard";
 // import ml from '../../Assets/ml.jpg'
 import and from "../../Assets/android.png";
 import webd from "../../Assets/webdev.png";
-import cyber from "../../Assets/cyber.png";
+import cyber from "../../Assets/cybersecurity-card.png";
 import meta from "../../Assets/arvr.png";
 import graphic from "../../Assets/graphics.png";
 import ml from "../../Assets/ml.png";
+import coding from "../../Assets/coding.png"
+import content from "../../Assets/cyber.png"
 const data = [
   {
     name: "Web Development",
@@ -49,13 +51,13 @@ const data = [
     name: "Content Writing",
     addon: "",
     data: "this is a web development ... ",
-    img: cyber,
+    img: content,
   },
   {
     name: "CP/DSA",
     addon: " ",
     data: "this is a web development ... ",
-    img: cyber,
+    img: coding,
   },
 ];
 const Domain = () => {
