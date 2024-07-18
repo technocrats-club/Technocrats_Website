@@ -34,7 +34,7 @@ import ing4 from "../../Assets/Inga4.jpg";
 
 const data = [
   {
-    name:"Inauguration",
+    name:"Inauguration Ceremony",
     description:"We are excited to introduce TECHNOCRATS, a club that embodies the essence of opportunities and continuous learning at its core.Our vision is to become a premier platform that nurtures technological innovation, creativity, and leadership among the KIETians. On the momentous day of 18th July 2023, we officially launched our club, graced by the esteemed presence of our Director, our Dean of Academics, HOD CSIT, and our esteemed faculty members.We take pride in the valuable guidance provided by our industry mentors, who bring expertise from leading tech companies. With their support, TECHNOCRATS aims to foster a community of tech enthusiasts, empowering each member to explore and excel in the world of technology.Let's embark on this exciting journey together, united by our passion for innovation and growth!",
     image1: ing1,
     image2: ing2,

@@ -2,12 +2,14 @@ import React from "react";
 import styles from "./Resource.module.css";
 import and from "../../Assets/android.png";
 import webd from "../../Assets/webdev.png";
-import cyber from "../../Assets/cyber.png";
+import cyber from "../../Assets/cybersecurity-card.png";
 import meta from "../../Assets/arvr.png";
 import graphic from "../../Assets/graphics.png";
 import ml from "../../Assets/ml.png";
 import Domaincard from "../../Components/Domaincard/Domaincard";
 import { Link } from "react-router-dom";
+import coding from "../../Assets/coding.png"
+import content from "../../Assets/cyber.png"
 const data = [
   {
     name: "Web",
@@ -43,7 +45,7 @@ const data = [
     name: "CP/DSA",
     addon: " ",
     data: "this is a web development ... ",
-    img: graphic,
+    img: coding,
   },
   {
     name: "UI/UX",
@@ -55,7 +57,7 @@ const data = [
     name: "Content",
     addon: "Writing",
     data: "this is a web development ... ",
-    img: cyber,
+    img: content,
   },
 ];
 const Resource = () => {
